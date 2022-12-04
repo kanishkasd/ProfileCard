@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+  background: var(--Dark-cyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.img-box {
+  position: absolute;
+  width: 350px;
+  height: 370px;
+  background: white;
+  margin: 150px 600px;
+  border-radius: 10px;
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.pattern-top {
+  position: absolute;
+  margin: -500px -250px;
+}
+
+.pattern-bottom {
+  position: absolute;
+  margin: 330px 0 0 750px;
+}
+
+.cover-image > img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  top: 100px;
+  left: 123px;
+  z-index: 100;
+}
+
+.Details {
+  margin: 80px 100px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.age {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  margin: 0 10px;
+  position: absolute;
+  font-size: 18px;
+}
+
+.Country {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  position: absolute;
+  top: 255px;
+  left: 140px;
+  font-size: 16px;
+}
+
+.statistic-container {
+  position: absolute;
+  flex: 0.2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2px solid #d8d9df;
+  color: hsl(229, 23%, 23%);
+  z-index: 100;
+  margin: 450px 0 0 600px;
+}
+
+.topic {
+  position: relative;
+  left: 20px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.sub-topic {
+  position: relative;
+  top: 20px;
+  right: 40px;
+  font-weight: 400;
+  font-size: 0.6em;
+  color: var(--Dark-gray);
+  letter-spacing: 2px;
+}
